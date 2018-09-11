@@ -1,5 +1,6 @@
 package uk.co.testcraft.stepDefs;
 
+import cucumber.api.Scenario;
 import cucumber.api.java8.En;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,6 +16,7 @@ public class GoogleSearchStepDefs implements En {
 
     public GoogleSearchStepDefs() {
 
+        Scenario One;
         Given("^I'm on google\\.co\\.uk main page$", () -> {
             googlePage.goTo();
         });
@@ -33,4 +35,6 @@ public class GoogleSearchStepDefs implements En {
         });
 
     }
+
+
 }
